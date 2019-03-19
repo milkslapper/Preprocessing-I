@@ -138,9 +138,17 @@ html {
 body {
   height: 100%;
   background-color: #c9af98;
+  font-family: 'Source Code Pro', monospace;
 }
 img {
   width: 20%;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 nav {
   width: 100%;
@@ -152,31 +160,43 @@ nav a {
   text-decoration: none;
   color: black;
 }
+.head {
+  font-size: 3rem;
+  width: 40rem;
+  text-align: center;
+  background-color: #111111;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 2rem;
+  padding-bottom: 0.4rem;
+  color: #FF4136;
+}
 .top-content {
   background-color: #bd8c7d;
   margin: 1rem 1rem 1rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .top-content header {
-  font-size: 4rem;
-  border: 0.1rem solid black;
-  width: 40rem;
-  display: flex;
-  justify-content: space-around;
-  background-color: #DDDDDD;
-  margin: 1rem 1rem 1rem 1rem;
-  border-radius: 2rem;
-}
-h1 {
-  font-size: 4rem;
-  border: 0.1rem solid black;
+  font-size: 3rem;
   width: 40rem;
   text-align: center;
-  background-color: #DDDDDD;
+  background-color: #111111;
   margin: 1rem 1rem 1rem 1rem;
   border-radius: 2rem;
+  padding-bottom: 0.4rem;
+  color: #FF4136;
+}
+.top-content h1 {
+  font-size: 3rem;
+  width: 40rem;
+  text-align: center;
+  background-color: #111111;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 2rem;
+  padding-bottom: 0.4rem;
+  color: #FF4136;
 }
 .content {
   display: flex;
@@ -201,53 +221,12 @@ h1 {
   border: 0.1rem solid black;
   font-size: 3rem;
   text-align: center;
-  background-color: #f9f8fd;
+  background-color: black;
   border-radius: 1.5rem;
   width: 20rem;
+  color: #FF4136;
 }
-/*.left-content {
-		font-size: 1.6rem;
-		display: flex;
-		flex-direction: column;
-		flex-basis: 33%;
-		
-		
-	}
-	h2{
-		border: .1rem solid black;
-		font-size: 3rem;
-		text-align: center;
-		background-color: #f9f8fd;
-		display: flex;
-		align-items: center;
-		border-radius: 1.5rem;
-		width: 40rem;
-		
-		.middle {
-			display: flex;
-			flex-wrap: wrap;
-			
-		}
-		
-	
-	}
-	p {
-		font-size: 1.6rem;
-		text-align: left;
-			
-	}
-	.left {
-		font-size: 2rem;
-		list-style-type: circle;
-		margin: 0rem 2.4rem;
-	}
-	h3 {
-		font-size: 1.6rem;
-	}
-	.middle {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-	}
-} 
-*/
+.content .list li {
+  text-align: center;
+  padding-bottom: 1rem;
+}
