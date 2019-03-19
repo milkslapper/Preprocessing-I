@@ -174,9 +174,8 @@ nav a {
   background-color: #bd8c7d;
   margin: 1rem 1rem 1rem 1rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
 .top-content header {
   font-size: 3rem;
@@ -210,6 +209,9 @@ nav a {
 }
 .content .about-me h2 {
   margin-bottom: 1rem;
+}
+.content .about-me .contact {
+  width: 100%;
 }
 .content .about-me p {
   margin-bottom: 1rem;
